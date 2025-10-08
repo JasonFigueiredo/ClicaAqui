@@ -3,7 +3,7 @@
 define('HOST','localhost');
 define('USER','root');
 define('PASS',null);
-define('DB','Corta_link');
+define('DB','ClicaAqui');
 
 class Conexao{
  /** @var PDO */
