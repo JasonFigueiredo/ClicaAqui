@@ -31,7 +31,7 @@ include '../src/hash.php';
     <div class="hero-content">
      <div class="hero-text">
       <h2>Bem-vindo ao<img src="../style/img/ClicaAqui(png).png" alt="ClicaAqui" class="hero-img"></h2>
-      <p>Sua plataforma de Links Personalizados</p>
+      <p>Sua plataforma de Links Curtos</p>
      </div>
     </div>
    </section>
