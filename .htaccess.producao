@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /
+
+# Força HTTPS (segurança)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redireciona para a página inicial se acessar a raiz
+RewriteRule ^$ View/inicio.php [L]
+
+# Ignora arquivos e diretórios reais
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Captura URLs curtas - apenas /codigo (hash invisível)
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?codigo=$1 [L,QSA]
+
